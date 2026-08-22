@@ -3,21 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>first project</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0; 
+            font-family: Montserrat, sans-serif;
+        }
+        body {
+            height: 100vh;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #FF788D;
+            color: #165823;
+            height: 75px;   
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            gap: 30px;
+        }
+        .header li {
+            list-style: none;
+            transition: 0.3s;
+        }
+        .header li:hover {
+            translate: 0 -5px;
+            transform: scale(1.1);
+        }
+        .header a {
+            text-decoration: none;
+            color: #165823;
+            transition: 0.3s;
+        }
+        .header a:hover {
+            color: #FFF2F2;
+            
+        }
+    </style>
 </head>
 <body>
-<h1> Hello </h1>
-<h2>Type anything...</h2>
-<table border="1">
-<thead> <th>Name</th><th>Age</th><th>Profession</th></thead>
-<br>
-<form action="#" method="post">
-<fieldset><legend>Personal Information</legend>
-    <div><label for="userName"></label></div>
-    <input type="name">
-</fieldset>
-</form>
-<br>
-</table>
+   <div class="content">
+
+    <!--Navigation bar-->
+
+    <div class="header">
+        <h1 class="logo">Company</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+<!--Main content-->
+
+<div class="main">
+    <h2>Welcome to my first project!</h2>
+    <p>Here we start our full site experience using HTML and CSS.</p>
+    <button>start now</button>
+</div>
+
+<!--Footer-->
+
+<div class="footer">
+   <div class="boxes">
+       <div class="boxes">
+        <h1>Security</h1>
+        <p>Powerful protection for your website and content</p>
+       </div>
+       <div class="boxes">
+                <h1>Design</h1>
+        <p>Modern designs that captivate your audience</p>
+       </div>
+       <div class="boxes">
+                <h1>Support</h1>
+        <p>24/7 customer support for all your needs</p>
+       </div>
+   </div>
+</div>
+</div> 
 </body>
 </html>
